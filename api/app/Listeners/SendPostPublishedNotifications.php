@@ -12,7 +12,7 @@ class SendPostPublishedNotifications implements ShouldQueue
 {
     use InteractsWithQueue;
 
-    private $queue = 'notifications';
+    public $queue = 'notifications';
 
     public function handle(PostPublishedEvent $event): void
     {

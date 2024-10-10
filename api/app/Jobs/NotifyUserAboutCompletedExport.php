@@ -14,7 +14,7 @@ class NotifyUserAboutCompletedExport implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
-    private User $user;
+    public User $user;
 
     private string $fileLink;
 

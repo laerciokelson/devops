@@ -1,0 +1,13 @@
+includes:
+    - ./vendor/nunomaduro/larastan/extension.neon
+
+parameters:
+    paths:
+        - app
+    level: 5
+    ignoreErrors:
+        - '#Property .+::\$post is never read, only written\.#'
+        - '#Property .+::\$queue is never read, only written\.#'
+        - '#Property .+::\$tries is never read, only written\.#'
+        - '#Property .+::\$backoff is never read, only written\.#'
+      

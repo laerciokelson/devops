@@ -11,7 +11,7 @@ class PostPublishedEvent
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
-    private Post $post;
+    public Post $post;
 
     public function __construct(Post $post)
     {

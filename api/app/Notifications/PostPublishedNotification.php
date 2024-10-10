@@ -12,9 +12,9 @@ class PostPublishedNotification extends Notification implements ShouldQueue
 {
     use Queueable;
 
-    private $tries = 5;
+    public $tries = 5;
 
-    private $backoff = [30, 60, 120];
+    public $backoff = [30, 60, 120];
 
     private Post $post;
 
